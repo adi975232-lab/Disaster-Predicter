@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Disaster Risk Predictor</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🇮🇳 Disaster Risk Predictor 🇮🇳</h1>
+        <p>Select your exact location:</p>
+        
+        <div class="input-section">
+            <select id="state-select">
+                <option value="">Select State</option>
+            </select>
+            
+            <select id="district-select" disabled>
+                <option value="">Select District</option>
+            </select>
+
+            <select id="local-select" disabled>
+                <option value="">Select Local Area</option>
+            </select>
+
+            <button id="check-btn">Check Risks</button>
+        </div>
+
+        <div id="result-box" class="hidden">
+            <h2 id="location-name" style="color: #00bcd4;">Location: --</h2> 
+            
+            <div class="weather-data">
+                <p>🌡️ Temperature: <span id="temp">--</span> °C</p>
+                <p>💧 Humidity: <span id="humidity">--</span>%</p>
+                <p>🌧️ Rainfall (last 1hr): <span id="rain-data">0</span> mm</p>
+            </div>
+            
+            <div class="risk-container">
+                <div class="risk-card">
+                    <h3>🔥 Forest Fire</h3>
+                    <p id="fire-risk">--</p>
+                </div>
+                <div class="risk-card">
+                    <h3>🌊 Flood</h3>
+                    <p id="flood-risk">--</p>
+                </div>
+                <div class="risk-card">
+                    <h3>⛰️ Landslide</h3>
+                    <p id="landslide-risk">--</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
